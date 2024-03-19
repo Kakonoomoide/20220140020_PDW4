@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SadQuoteHub</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style/allert.css" />
+    <link rel="stylesheet" href="./style/info.css" />
+    <link rel="icon" href="./img/icon.png" type="image/png" />
+  </head>
+  <body>
+    <!-- main website -->
+    <div class="BGimg">
+      <div class="container">
+        <!-- costume allert -->
+        <div class="allert">
+          <div class="allertcard">
+            <img src="./img/mirai.gif" alt="mirai" />
+            <div id="MotivationCntr">
+              <p id="Motivation">random motivation.</p>
+            </div>
+            <button class="allertbtn">okey</button>
+          </div>
+        </div>
+
+        <!--credit card-->
+        <div class="infopopup">
+          <div class="infocard">
+            <img src="./img/mata.gif" alt="eyes" />
+            <div id="infoCntr">
+              <p id="infotxt">create by kakonoomoide && chat gpt.</p>
+            </div>
+            <button class="btninfo" onclick="hideInfoPopup()">okey</button>
+          </div>
+        </div>
+
+        <!-- main card -->
+        <div class="card">
+          <div class="IntCard">
+            <h1>Bunga Myosotis</h1>
+            <p class="clock" id="hasil"></p>
+            <img src="./img/flower.png" alt="Bunga Myosotis" />
+            <div id="quoteContainer">
+              <p id="quote">Click the button below to get a random quote.</p>
+            </div>
+            <button
+              class="refresh"
+              id="refreshButton"
+              onclick="generateRandomQuote()"
+            >
+              Refresh Quotes
+            </button>
+            <button class="info" id="infoButton" onclick="showInfoPopup()">
+              credit
+            </button>
+            <audio id="myAudio" autoplay loop>
+              <source src="./audio/bgaudio.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sisipkan file JavaScript -->
+    <script src="./script/script.js" defer></script>
+    <script src="./script/clock.js" defer></script>
+    <script src="./script/allert.js" defer></script>
+    <script src="./script/info.js" defer></script>
+  </body>
+</html>
